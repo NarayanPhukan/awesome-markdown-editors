@@ -1,0 +1,22 @@
+graph TD
+    A[User] --> B(Home Page);
+    B --> C{Navigation};
+    C -- Image Page --> D[Image Gallery];
+    C -- Playground Info --> E[Playground Information];
+    C -- Feedback --> F[Feedback Form];
+    C -- Form --> G[Registration Form];
+    F --> H[Feedback Data];
+    G --> I[User Data];
+    D --> J[Image Database];
+    E --> K[Playground Database];
+    H --> L[Feedback Processing];
+    I --> M[User Processing];
+    J --> N[Image Display];
+    K --> O[Playground Display];
+    L --> P[Feedback Storage];
+    M --> Q[User Storage];
+    N --> B;
+    O --> B;
+    P --> Admin;
+    Q --> Admin;
+    Admin --> R[Admin Interface];
